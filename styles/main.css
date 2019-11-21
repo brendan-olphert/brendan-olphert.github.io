@@ -4,13 +4,16 @@ h1 {color:white;
         text-align: center;
         background-blend-mode: overlay;
         font-size:60px;
+        cursor: not-allowed
         }
 
 h2 {font-family:Arial, Helvetica, sans-serif;
     background-color:grey;
     color: white;
-    border-block-color: black;
+    text-align: center;
     }
-
-p {text-align: center;
-         font-family: Arial, Helvetica, sans-serif}
+h3  {font-family:Arial, Helvetica, sans-serif}
+p {text-align: right;
+         font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+                }
