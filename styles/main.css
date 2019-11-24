@@ -4,7 +4,7 @@ h1 {color:white;
         text-align: center;
         background-blend-mode: overlay;
         font-size:60px;
-        cursor: not-allowed
+        cursor: not-allowed;       
         }
 
 h2 {font-family:Arial, Helvetica, sans-serif;
@@ -19,7 +19,63 @@ h4 {font-family:Arial, Helvetica, sans-serif;
     color: white;
     font-size:40px}
 
-p {text-align: right;
+p {text-align: left;
          font-family: Arial, Helvetica, sans-serif;
-            padding: 20px;}
+         font-size:20px;
+    }
+
+.column {
+        float: left;
+        width: 18%;
+        padding: 10px;
+        height: 220px;
+        font-size:smaller;
+        position:fixed;
+      }
+  
+.main {
+        align:right;
+        float:right;
+        width: 80%;
+      }
+        a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+  }
+  
+  a:visited {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color:black;
+    background-color: transparent;
+    text-decoration:solid;
+  }
+  
+  a:active {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  .subheading {
+      color: white;
+      font-size: 30px;
+      text-align:center;
+      font-family:Arial, Helvetica, sans-serif;
+      margin-top: 40px;
+      margin-right:20px;
+      text-decoration-style: solid;
+  }
+    
+      .figure {
+        text-align:center;
+      }
+      
+      .img {
+        align-content: center;
                 

@@ -7,41 +7,47 @@
   
     <style>
     
-    .column {
-      float: left;
-      width: 18%;
-      padding: 20px;
-      height: 600px;
-      font-size:smaller}
-
-      a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
+.diagram {
+    position:relative;
+    left: 100px; 
+    margin: 20px 20px 20px 20px;
 }
 
-a:visited {
-  color:white;
-  background-color: transparent;
-  text-decoration: none;
+.example {
+    position:relative;
+    border-style: solid;
+    border-color:black;
+    border-width: 6px;
+    padding: 20px 20px 20px 20px;
+    margin: 10px 10px 120px 20px
 }
 
-a:hover {
-  color:black;
-  background-color: transparent;
-  text-decoration: underline;
+.codeexample {
+  position:relative;  
+  left:180px;
+  padding: 0px 20px 20px 20px;
+  
 }
 
-a:active {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
+.borderstylevariants {
+  position:relative;  
+  left:140px;
+  padding: 20px 20px 20px 20px 
 }
-      </style>
+
+.figcaption {
+  text-align:center; 
+  font-family:Arial, Helvetica, sans-serif;
+  padding-bottom:30px;
+  font-style:italic;
+  font-size:smaller;
+}
+
+</style>
   </head>
    <body>
     <h1>brendan olphert</h1>
-    <h2> <a herf="http://brendan-olphert.github.io" 
+    <h2> <a href="../index.html" 
       title="Home">home</a></h2>
       
       <div class="column" style="background-color:transparent">
@@ -54,9 +60,80 @@ a:active {
                 
                           <li><a href="https://brendan-olphert.github.io/blog/sprint2-cultural.html" 
                           title="Sprint Two-Cultural">Cultural</a></li></ul></h3> 
+                        
+                          Sprint Three<li><a href="https://brendan-olphert.github.io/blog/sprint2-cultural.html" 
+                            title="Sprint Three-Technical">Technical</a></li></ul></h3>
+                        
                         </div> 
-                      
 
-    <h4>research</h4>
+      
+      <div class="main">
+      
+    <h4>Margin, Border, and Padding</h4>
 
-    <p> do research</p>
+    <p><div class="subheading">Margin</div></p>
+
+    <p>Margin is the CSS property that defines the space outside of an element to its next outside element.
+
+      Margin affects elements that both have or do not have borders. If an element has a border, margin defines 
+      the space from this border to the next outer element. If an element does not have a border, then margin defines the space from the element content 
+      to the next outer element.
+      </p>
+
+      <p><div class="subheading">Border</div></p>
+
+      <p>Border is the CSS property that allows you to specify the style, width and colour of an elements border.
+
+        It will create a defined border with the elements padding on the inside and the elemnts margins on the outside.
+        Border style, width, and colour can be customised.
+        Like margins individual values can be set for the top, right, bottom and left sides 
+        of the border.
+
+        a complete list of border values can be found <a href=https://www.w3schools.com/css/css_border.asp title=here>here</a></p>
+
+        <figure>
+        <img src=../media/border-style-variants.png class=borderstylevariants style="width:440px;height:300px" alt="Examples of border-style variations">
+        <figcaption class=figcaption>Examples of border-style values</figcaption></figure>
+
+        <p><div class="subheading">Padding</div></p>
+
+        <p>Padding is the CSS property that defines the space between an element content and its border. 
+          If an element has a border around it, padding will give space from that border to the element content which appears in that border.
+          If the element does not have a border padding will have no effect. 
+          There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p>
+
+          <p><div class="subheading">Difference Between Padding,Margin and Border</div></p>
+
+          <p>A key difference between margin and padding is that while padding 
+            deals with the inner space, margin deals with the outer space to the next outer element.
+            margin helps to create space around the element outside the border, 
+            while padding helps to create space around the element inside the border.
+          
+            The margin is intended for providing space between outside HTML elements or the sides of the page. 
+            Padding is used for providing visual space between the content and the border of the box.
+          
+            using margin will not affect your element's dimensions whereas padding will add to your elements dimensions (even without a border)</p>
+        
+            <figure>
+            <img src=http://amberzilla.github.io/blog/blog_images/margin_padding.png class=diagram>
+            <figcaption class=figcaption>This diagram shows, working outward from the object, the Padding, Border and Margin.</figcaption></figure>
+
+            <p>
+              As an example I added the code bellow to the Header of this page.
+            </p>
+
+
+            <img src=../media/codeexample.png class=codeexample style="width:440px;height:280px">
+            
+            
+            
+            <p>Bellow you will see this header with the above values added, 
+            The header text "brendan olphert" is the object.
+            I have changed the background colour to better represent the padding.
+            The red line represents the border and the space outside of the border until
+            the next object (here shown as the link bar) is the margin.</p>
+            
+            <img src=../media/example.png class=example style="width:740px;height:340px;">
+
+
+            </div>
